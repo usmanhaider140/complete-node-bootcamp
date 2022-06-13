@@ -1,0 +1,38 @@
+[
+  { "id": "672c1a60-2afb-4d03-b112-df292295f7c8", "name": "Charcuterie" },
+  { "id": "bcdf3da4-6b4c-48d1-ad4e-afd667c1833f", "name": "Cheese" },
+  { "id": "ed83281a-9e29-4fd2-bf60-bf460b62249c", "name": "Chocolate" },
+  { "id": "86b83bf7-6ae0-4f88-8735-8ea46f5a785c", "name": "Cider" },
+  { "id": "2818fe48-7944-4009-9b24-c67d1d86b644", "name": "Coffee" },
+  { "id": "92524b35-26b6-4b76-ac61-8fa4da1f9f88", "name": "Dry Ice" },
+  { "id": "2bde60cb-0b1c-4507-84f9-a36a19648356", "name": "Food" },
+  { "id": "6c6fd42d-efb4-479c-9a3b-8faee7ebc644", "name": "Fortified Wine" },
+  { "id": "a83d9fa6-6009-4b40-b03f-fb39ae044a8d", "name": "Gift Card" },
+  { "id": "c680c245-fb3b-47f2-92bb-c62f1158ffd9", "name": "Ice Pack" },
+  { "id": "81192631-c8df-4739-8496-756013e9f4dd", "name": "Insert" },
+  { "id": "b006c67d-fc8b-4343-974c-6fba1a25162b", "name": "Kombucha" },
+  { "id": "b2c0de04-bef1-4af5-b5d2-dae1fbb295df", "name": "Malt Beverage" },
+  { "id": "c565d45d-5fe8-4aad-a59c-ad1fb6c51ab2", "name": "Merchandise" },
+  {
+    "id": "ac793416-8131-47cb-8f9c-462b03d4ff98",
+    "name": "Non-Alcohol Beverage"
+  },
+  { "id": "1296a611-9a6e-4fc2-89ad-f5d76ad9b2fa", "name": "Olive Oil" },
+  { "id": "61956f74-1582-49b3-b6ef-eaa5913fe951", "name": "Other Oil" },
+  { "id": "e814ff41-f720-4446-8fab-bf0d20e7505f", "name": "Packaging" },
+  { "id": "c8006ef2-c0c0-4608-83fc-aca96aa4fcdf", "name": "Pallet" },
+  {
+    "id": "ddb1b6c6-834f-434f-8a53-8af09cfc45ea",
+    "name": "Production Material"
+  },
+  { "id": "5c0a7b29-03ce-4159-887c-6f88c2e7fa36", "name": "Rack" },
+  { "id": "eade63ad-7627-4950-9e65-71e5cbb5466c", "name": "Sake" },
+  {
+    "id": "dee15077-f004-451b-ae11-53c7038c5a45",
+    "name": "Shipping Container"
+  },
+  { "id": "78bb019d-219c-4b20-8893-fd947870a824", "name": "Sparkling Wine" },
+  { "id": "a8456f6b-b005-4245-ae5d-d051996ac170", "name": "Spirits" },
+  { "id": "50ea99a2-a115-475b-a06e-2cc8d21b8a35", "name": "Still Wine" },
+  { "id": "67efdf08-dfa9-429a-bf21-c9f4be7fdb77", "name": "Tea\n" }
+]

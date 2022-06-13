@@ -1,0 +1,1005 @@
+[
+  {
+    "name": "Charcuterie",
+    "product_sub_types": []
+  },
+  {
+    "name": "Cheese",
+    "product_sub_types": []
+  },
+  {
+    "name": "Chocolate",
+    "product_sub_types": []
+  },
+  {
+    "name": "Cider",
+    "product_sub_types": [
+      {
+        "name": "Apple",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Perry / Poiré",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Other",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Coffee",
+    "product_sub_types": []
+  },
+  {
+    "name": "Dry Ice",
+    "product_sub_types": []
+  },
+  {
+    "name": "Food",
+    "product_sub_types": []
+  },
+  {
+    "name": "Fortified Wine",
+    "product_sub_types": [
+      {
+        "name": "Fortified Red",
+        "product_tertiary_types": [
+          {
+            "name": "Madeira"
+          },
+          {
+            "name": "Marsala"
+          },
+          {
+            "name": "Mistelle"
+          },
+          {
+            "name": "Port"
+          },
+          {
+            "name": "Vermouth"
+          },
+          {
+            "name": "Vins doux naturels"
+          }
+        ]
+      },
+      {
+        "name": "Fortified Rosé",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Fortified White",
+        "product_tertiary_types": [
+          {
+            "name": "Mistelle"
+          },
+          {
+            "name": "Port"
+          },
+          {
+            "name": "Sherry"
+          },
+          {
+            "name": "Vermouth"
+          },
+          {
+            "name": "Vins doux naturels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gift Card",
+    "product_sub_types": []
+  },
+  {
+    "name": "Ice Pack",
+    "product_sub_types": []
+  },
+  {
+    "name": "Insert",
+    "product_sub_types": []
+  },
+  {
+    "name": "Kombucha",
+    "product_sub_types": [
+      {
+        "name": "Hard",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Malt Beverage",
+    "product_sub_types": [
+      {
+        "name": "Ale",
+        "product_tertiary_types": [
+          {
+            "name": "Ale"
+          },
+          {
+            "name": "Amber Ale"
+          },
+          {
+            "name": "Barley Wine"
+          },
+          {
+            "name": "Bitter Ale"
+          },
+          {
+            "name": "Brown Ale"
+          },
+          {
+            "name": "Cream Ale"
+          },
+          {
+            "name": "Export Ale"
+          },
+          {
+            "name": "Golden Ale"
+          },
+          {
+            "name": "India Pale Ale / IPA"
+          },
+          {
+            "name": "Pale Ale"
+          },
+          {
+            "name": "Stock Ale"
+          }
+        ]
+      },
+      {
+        "name": "Beer",
+        "product_tertiary_types": [
+          {
+            "name": "Amber Lager"
+          },
+          {
+            "name": "Bavarian"
+          },
+          {
+            "name": "Beer"
+          },
+          {
+            "name": "Bock Beer"
+          },
+          {
+            "name": "Dortmund / Dortmunder"
+          },
+          {
+            "name": "Draft Beer / Draught Beer"
+          },
+          {
+            "name": "Dry Beer"
+          },
+          {
+            "name": "Export Beer"
+          },
+          {
+            "name": "Golden Lager"
+          },
+          {
+            "name": "Ice Beer"
+          },
+          {
+            "name": "Kulmbacher"
+          },
+          {
+            "name": "Lager / Lager Beer"
+          },
+          {
+            "name": "Munich / Munchner"
+          },
+          {
+            "name": "Pils"
+          },
+          {
+            "name": "Pilsen / Pilsener / Pilsner"
+          },
+          {
+            "name": "Rye Beer"
+          },
+          {
+            "name": "Salvator"
+          },
+          {
+            "name": "Vienna"
+          },
+          {
+            "name": "Wein / Winer"
+          },
+          {
+            "name": "Wheat Beer"
+          },
+          {
+            "name": "Wurtzburger"
+          }
+        ]
+      },
+      {
+        "name": "Cereal Beverage",
+        "product_tertiary_types": [
+          {
+            "name": "Cereal Beverage"
+          },
+          {
+            "name": "Near Beer"
+          }
+        ]
+      },
+      {
+        "name": "Malt Beverage Specialty",
+        "product_tertiary_types": [
+          {
+            "name": "Black and Tan"
+          },
+          {
+            "name": "Half and Half"
+          }
+        ]
+      },
+      {
+        "name": "Porter",
+        "product_tertiary_types": [
+          {
+            "name": "Porter"
+          }
+        ]
+      },
+      {
+        "name": "Stout",
+        "product_tertiary_types": [
+          {
+            "name": "Cream Stout"
+          },
+          {
+            "name": "Imperial Stout"
+          },
+          {
+            "name": "Stout"
+          }
+        ]
+      },
+      {
+        "name": "Other",
+        "product_tertiary_types": [
+          {
+            "name": "Malt Liquor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Merchandise",
+    "product_sub_types": [
+      {
+        "name": "Apparel",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Corkscrew",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Decanter",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Glassware",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Non-Alcohol Beverage",
+    "product_sub_types": []
+  },
+  {
+    "name": "Olive Oil",
+    "product_sub_types": []
+  },
+  {
+    "name": "Other Oil",
+    "product_sub_types": []
+  },
+  {
+    "name": "Packaging",
+    "product_sub_types": [
+      {
+        "name": "Container",
+        "product_tertiary_types": [
+          {
+            "name": "Box"
+          },
+          {
+            "name": "Gift Box"
+          },
+          {
+            "name": "Glass"
+          },
+          {
+            "name": "Inserts - Cardboard / Pulp"
+          },
+          {
+            "name": "Inserts - Styrofoam"
+          },
+          {
+            "name": "Plastic"
+          },
+          {
+            "name": "Wood Box"
+          }
+        ]
+      },
+      {
+        "name": "Label",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Packing",
+        "product_tertiary_types": [
+          {
+            "name": "Compostable popcorn, paper, cardboard"
+          },
+          {
+            "name": "Plastic bubble wrap"
+          },
+          {
+            "name": "Other"
+          }
+        ]
+      },
+      {
+        "name": "Packing Item",
+        "product_tertiary_types": [
+          {
+            "name": "Hang Tags"
+          },
+          {
+            "name": "Stickers"
+          },
+          {
+            "name": "Tissue Wrap"
+          },
+          {
+            "name": "Other"
+          }
+        ]
+      },
+      {
+        "name": "Ribbon",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Pallet",
+    "product_sub_types": [
+      {
+        "name": "Plastic",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Wood",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Production Material",
+    "product_sub_types": [
+      {
+        "name": "Bags",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Barrel",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Bottles Glass",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Bottles Plastic",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Caps",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Capsules",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Carboy",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Corks",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Keg",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Labels",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Other",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Staves",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Rack",
+    "product_sub_types": []
+  },
+  {
+    "name": "Sake",
+    "product_sub_types": [
+      {
+        "name": "Daiginjo-shu",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Flavored",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Futsuu-shu",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Ginjo-shu",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Honjozo-shu",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Junmai-shu",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Namazake",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Other",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Shipping Container",
+    "product_sub_types": []
+  },
+  {
+    "name": "Sparkling Wine",
+    "product_sub_types": [
+      {
+        "name": "Sparkling White",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Sparkling",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Sparkling Red",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Sparkling Rosé",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Spirits",
+    "product_sub_types": [
+      {
+        "name": "Advocat",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Aquavit / Eau de vie",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Bitters",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Blended Applejack",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Brandy",
+        "product_tertiary_types": [
+          {
+            "name": "Applejack / Apple Brandy"
+          },
+          {
+            "name": "Armagnac"
+          },
+          {
+            "name": "Calvados"
+          },
+          {
+            "name": "Cognac"
+          },
+          {
+            "name": "Dried Fruit Brandy"
+          },
+          {
+            "name": "Fruit Brandy"
+          },
+          {
+            "name": "Grappa"
+          },
+          {
+            "name": "Immature Brandy"
+          },
+          {
+            "name": "Kirschwasser"
+          },
+          {
+            "name": "Lees Brandy"
+          },
+          {
+            "name": "Menutral Brandy"
+          },
+          {
+            "name": "Pisco"
+          },
+          {
+            "name": "Pomace Brandy / Marc Brandy"
+          },
+          {
+            "name": "Raisin Brandy"
+          },
+          {
+            "name": "Residue Brandy"
+          },
+          {
+            "name": "Silvovitz"
+          },
+          {
+            "name": "Substandard Brandy"
+          }
+        ]
+      },
+      {
+        "name": "Distilled Spirits Specialty",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Flavored Brandy",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Flavored Gin",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Flavored Rum",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Flavored Vodka",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Gin",
+        "product_tertiary_types": [
+          {
+            "name": "Compounded Gin"
+          },
+          {
+            "name": "Distilled Gin"
+          },
+          {
+            "name": "Redistilled Gin"
+          }
+        ]
+      },
+      {
+        "name": "Imitation Distilled Spirits",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Liqueur / Cordial",
+        "product_tertiary_types": [
+          {
+            "name": "Amaretto"
+          },
+          {
+            "name": "Anise / Anisette"
+          },
+          {
+            "name": "Arak / Arack / Raki"
+          },
+          {
+            "name": "Bourbon Liqueur / Bourbon Cordial"
+          },
+          {
+            "name": "Brandy Liqueur / Brandy Cordial"
+          },
+          {
+            "name": "Crème, Crème de Menthe, de Cassiss, …"
+          },
+          {
+            "name": "Curacao"
+          },
+          {
+            "name": "Gin Liqueur / Gin Cordial"
+          },
+          {
+            "name": "Goldwasser"
+          },
+          {
+            "name": "Kummel"
+          },
+          {
+            "name": "Ouzo"
+          },
+          {
+            "name": "Peppermin Schnapps"
+          },
+          {
+            "name": "Rock and Bourbon"
+          },
+          {
+            "name": "Rock and Brandy"
+          },
+          {
+            "name": "Rock and Rum"
+          },
+          {
+            "name": "Rock and Rye"
+          },
+          {
+            "name": "Rum Liqueur / Rum Cordial"
+          },
+          {
+            "name": "Rye Liqueur / Rye Cordial"
+          },
+          {
+            "name": "Sambuca"
+          },
+          {
+            "name": "Sloe Gin"
+          },
+          {
+            "name": "Triple Sec"
+          }
+        ]
+      },
+      {
+        "name": "Mescal / Mezcal",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Neutral Spirits",
+        "product_tertiary_types": [
+          {
+            "name": "Grain Spirits"
+          },
+          {
+            "name": "Vodka"
+          }
+        ]
+      },
+      {
+        "name": "Recognized Cocktails",
+        "product_tertiary_types": [
+          {
+            "name": "Alexander"
+          },
+          {
+            "name": "Apricot Sour"
+          },
+          {
+            "name": "Black Russian"
+          },
+          {
+            "name": "Bloody Mary"
+          },
+          {
+            "name": "Collins Variation"
+          },
+          {
+            "name": "Daiquiri"
+          },
+          {
+            "name": "Egg Nog"
+          },
+          {
+            "name": "Fruit Daiquiri"
+          },
+          {
+            "name": "Gimlet"
+          },
+          {
+            "name": "Grasshopper"
+          },
+          {
+            "name": "Mai Tai"
+          },
+          {
+            "name": "Manhattan"
+          },
+          {
+            "name": "Manhattan Variation (Scotch Manhattan)"
+          },
+          {
+            "name": "Margarita"
+          },
+          {
+            "name": "Margarita Variation"
+          },
+          {
+            "name": "Martini"
+          },
+          {
+            "name": "Mint Julep"
+          },
+          {
+            "name": "Old Fashioned"
+          },
+          {
+            "name": "Pink Squirrel"
+          },
+          {
+            "name": "Screwdriver"
+          },
+          {
+            "name": "Sloe Gin Fiz"
+          },
+          {
+            "name": "Sour Variation"
+          },
+          {
+            "name": "Tom Collins"
+          },
+          {
+            "name": "Vodka Gimlet"
+          },
+          {
+            "name": "Vodka Martini"
+          },
+          {
+            "name": "Wallbanger"
+          },
+          {
+            "name": "Whisky Sour"
+          },
+          {
+            "name": "White Russian"
+          }
+        ]
+      },
+      {
+        "name": "Rum",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Tequila",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Whisky",
+        "product_tertiary_types": [
+          {
+            "name": "Blended Bourbon Whisky"
+          },
+          {
+            "name": "Blended Canadian Whisky"
+          },
+          {
+            "name": "Blended Corn Whisky"
+          },
+          {
+            "name": "Blended Irish Whisky"
+          },
+          {
+            "name": "Blended Light Whisky"
+          },
+          {
+            "name": "Blended Malt Whisky"
+          },
+          {
+            "name": "Blended Rye Malt Whisky"
+          },
+          {
+            "name": "Blended Rye Whisky"
+          },
+          {
+            "name": "Blended Scotch Whisky"
+          },
+          {
+            "name": "Blended Straight Bourbon Whisky"
+          },
+          {
+            "name": "Blended Straight Malt Whisky"
+          },
+          {
+            "name": "Blended Straight Rye Whisky"
+          },
+          {
+            "name": "Blended Straight Wheat Whisky"
+          },
+          {
+            "name": "Blended Wheat Whisky"
+          },
+          {
+            "name": "Blended Whisky"
+          },
+          {
+            "name": "Bourbon Whisky"
+          },
+          {
+            "name": "Canadian Whisky"
+          },
+          {
+            "name": "Corin Whisky"
+          },
+          {
+            "name": "Irish Whisky"
+          },
+          {
+            "name": "Malt Whisky"
+          },
+          {
+            "name": "Rye Malt Whisky"
+          },
+          {
+            "name": "Rye Whisky"
+          },
+          {
+            "name": "Scotch Whisky"
+          },
+          {
+            "name": "Spirit Whisky"
+          },
+          {
+            "name": "Straight Bourbon Whisky"
+          },
+          {
+            "name": "Straight Corn Whisky"
+          },
+          {
+            "name": "Straight Malt Whisky"
+          },
+          {
+            "name": "Straight Rye Malt Whisky"
+          },
+          {
+            "name": "Straight Rye Whisky"
+          },
+          {
+            "name": "Straight Whisky"
+          },
+          {
+            "name": "Wheat Whisky"
+          },
+          {
+            "name": "Whisky Distilled from Bourbon Mash"
+          },
+          {
+            "name": "Whisky Distilled from Rye Malt Mash"
+          },
+          {
+            "name": "Whisky Distilled from Rye Mash"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Still Wine",
+    "product_sub_types": [
+      {
+        "name": "Red",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "White",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Rosé",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Amber / Orange",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Ambra (Fortified Wine)",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Aromatized Red",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Aromatized White",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Carbonated Wine",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Dessert Fruit Wine",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Fruit Wine",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Ice Wine Red",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Ice Wine White",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Mead",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Mixed / Flavor Types",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Oro (Fortified White)",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Other",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Rubino (Fortified Red)",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Table Flavored Wine",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Vin de Liqueur Red",
+        "product_tertiary_types": []
+      },
+      {
+        "name": "Vin de Liqueur Rosé",
+        "product_tertiary_types": []
+      }
+    ]
+  },
+  {
+    "name": "Tea\n",
+    "product_sub_types": []
+  }
+]
