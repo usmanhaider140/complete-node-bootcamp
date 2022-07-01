@@ -14,3 +14,10 @@ mongoose
   });
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
+
+process.on('unhandledRejection', (err) => {
+  console.log('Unhandled Rejection', err.message);
+  server.close(() => {
+    process.exit(1);
+  });
+});
