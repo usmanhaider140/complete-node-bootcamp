@@ -38,6 +38,17 @@ const prodError = (err, req, res, next) => {
     });
   }
 };
+
+const handleJwtError = (err = new AppError(
+  'Invalid token. Please log in again.',
+  401
+));
+
+const handleJwtExpiredError = (err = new AppError(
+  'Your token has expired. Please log in again.',
+  401
+));
+
 module.exports = (err, req, res, next) => {
   //   console.log(err.stack);
   err.statusCode = err.statusCode || 500;
@@ -50,6 +61,8 @@ module.exports = (err, req, res, next) => {
     if (error.code === 11000) error = handleCastDuplicateErrorDB(error);
     if (error.name === 'ValidationError')
       error = handleValidationErrorDB(error);
+    if (error.name === 'JsonWebTokenError') error = handleJwtError();
+    if (error.name === 'TokenExpiredError') error = handleJwtExpiredError();
     prodError(error, req, res, next);
   }
 };

@@ -1,5 +1,5 @@
 const fs = require('fs');
-const Tour = require('../models/tour');
+const Tour = require('../models/tourModal');
 const APIFeature = require('../utils/apiFeatures');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
