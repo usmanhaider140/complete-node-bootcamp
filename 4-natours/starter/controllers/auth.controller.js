@@ -1,4 +1,4 @@
-const User = require('../models/userModal');
+const User = require('../models/user.model');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const { generateToken } = require('../utils/generateToken');
@@ -37,3 +37,29 @@ exports.login = catchAsync(async (req, res, next) => {
     token,
   });
 });
+
+exports.restrictTo =
+  (...roles) =>
+  (req, res, next) => {
+    if (!roles.includes(req.user.role)) {
+      return next(
+        new AppError('You do not have permission to perform this action', 403)
+      );
+    }
+
+    next();
+  };
+
+exports.forgetPassword = catchAsync(async (req, res, next) => {
+  // 1) Get user based on POSTED email
+  const user = await User.findOne({ email: req.body.email });
+  if (!user) {
+    return next(new AppError('There is no user with email address', 404));
+  }
+
+  // 2) Generate the random reset token
+
+  // 3) Send it to user's email
+});
+
+exports.resetPassword = catchAsync(async (req, res, next) => {});
