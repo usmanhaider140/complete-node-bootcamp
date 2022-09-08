@@ -53,11 +53,15 @@ exports.restrictTo =
 exports.forgetPassword = catchAsync(async (req, res, next) => {
   // 1) Get user based on POSTED email
   const user = await User.findOne({ email: req.body.email });
+  console.log(user);
   if (!user) {
     return next(new AppError('There is no user with email address', 404));
   }
 
   // 2) Generate the random reset token
+
+  const resetToken = user.createPasswordResetToken();
+  await user.save({ validateBeforeSave: false });
 
   // 3) Send it to user's email
 });
