@@ -7,14 +7,15 @@ router.post('/login', authController.login);
 router.post('/forgotPassword', authController.forgetPassword);
 router.patch('/resetPassword/:token', authController.resetPassword);
 router.patch('/updateMyPassword', protectRoute, authController.updatePassword);
+router.patch('/updateMe', protectRoute, userController.updateMe);
 router
   .route('/')
-  .get(userController.getAllUsers)
+  .get(protectRoute, userController.getAllUsers)
   .post(userController.createUser);
 router
   .route('/:id')
-  .get(userController.getUserById)
-  .patch(userController.updateUserById)
-  .delete(userController.deleteUserById);
+  .get(protectRoute, userController.getUserById)
+  .patch(protectRoute, userController.updateUserById)
+  .delete(protectRoute, userController.deleteUserById);
 
 module.exports = router;
