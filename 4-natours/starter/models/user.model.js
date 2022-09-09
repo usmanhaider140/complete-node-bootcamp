@@ -44,7 +44,6 @@ const userSchema = new mongoose.Schema({
 });
 
 userSchema.pre('save', async function (next) {
-  console.log('pre save');
   // Only run this function if password was actually modified
   if (!this.isModified('password')) next();
   // Hash the password with cost of 12
@@ -52,6 +51,13 @@ userSchema.pre('save', async function (next) {
   console.log('hashing password', this.password);
   // Delete passwordConfirm field
   this.passwordConfirm = undefined;
+  next();
+});
+
+userSchema.pre('save', async function (next) {
+  // Only run this function if password was actually modified
+  if (!this.isModified('password') || this.new) next();
+  this.passwordChangedAt = Date.now() - 1000;
   next();
 });
 
@@ -82,7 +88,6 @@ userSchema.methods.createPasswordResetToken = function () {
     .update(resetToken)
     .digest('hex');
   this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
-  console.log({ resetToken }, this.passwordResetExpires);
   return resetToken;
 };
 

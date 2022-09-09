@@ -7,7 +7,6 @@ const catchAsync = require('./catchAsync');
 exports.protectRoute = catchAsync(async (req, res, next) => {
   //  1) Get token and check if it exists
   const { authorization } = req.headers;
-  console.log(authorization);
   if (!authorization || !authorization.startsWith('Bearer')) {
     return next(new AppError('You are not logged in', 401));
   }
