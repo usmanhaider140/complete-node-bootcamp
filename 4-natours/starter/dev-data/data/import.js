@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const fs = require('fs');
-const Tour = require('../../models/tour');
+const Tour = require('../../models/tour.model');
 dotenv.config({ path: '../../config.env' });
 
 mongoose
@@ -18,7 +18,7 @@ const importData = async () => {
       fs.readFileSync(`${__dirname}/tours-simple.json`, 'utf-8')
     );
 
-    await Tour.create(tours);
+    await Tour.insertMany(tours);
     console.log('Tours Import Successfully');
   } catch (err) {
     console.log(err);

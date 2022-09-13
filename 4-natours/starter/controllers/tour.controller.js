@@ -36,7 +36,8 @@ const getAllTours = catchAsync(async (req, res, next) => {
 
 const getTourById = catchAsync(async (req, res, next) => {
   const { id } = req.params;
-  const tour = Tour.findById(id);
+  const tour = await Tour.findById(id);
+
   if (!tour) {
     // res.status(404).send({ status: 'fail', message: 'Invalid ID' });
     return next(new AppError('Invalid ID', 404));
@@ -47,7 +48,7 @@ const getTourById = catchAsync(async (req, res, next) => {
 const updateTourById = catchAsync(async (req, res, next) => {
   const { id } = req.params;
 
-  const tour = Tour.findByIdAndUpdate(id, req.body, {
+  const tour = await Tour.findByIdAndUpdate(id, req.body, {
     new: true,
     runValidators: true,
   });
