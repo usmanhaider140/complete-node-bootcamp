@@ -36,7 +36,7 @@ const getAllTours = catchAsync(async (req, res, next) => {
 
 const getTourById = catchAsync(async (req, res, next) => {
   const { id } = req.params;
-  const tour = await Tour.findById(id);
+  const tour = await Tour.findById(id).populate('reviews'); // populate the reviews field with the reviews data
 
   if (!tour) {
     // res.status(404).send({ status: 'fail', message: 'Invalid ID' });

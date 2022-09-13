@@ -33,19 +33,20 @@ const reviewSchema = new mongoose.Schema(
 );
 
 reviewSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'tour',
-    select: 'name',
-  }).populate({
-    path: 'user',
-    select: 'name photo',
-  });
   // this.populate({
+  //   path: 'tour',
+  //   select: 'name',
+  // }).populate({
   //   path: 'user',
   //   select: 'name photo',
   // });
+  this.populate({
+    path: 'user',
+    select: 'name photo',
+  });
   next();
 }); // this is a regular expression, it means that it will match any string that starts with find))
+
 reviewSchema.index({ tour: 1, user: 1 }, { unique: true }); // this is a compound index, it means that we can not have more than one review per user per tour
 
 const Review = mongoose.model('Review', reviewSchema);
