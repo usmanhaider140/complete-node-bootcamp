@@ -1,13 +1,9 @@
 const fs = require('fs');
 const Tour = require('../models/tour.model');
-const APIFeature = require('../utils/apiFeatures');
-const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
+const Factory = require('./handlingFactory');
 
-const createTour = catchAsync(async (req, res, next) => {
-  const newTour = await Tour.create(req.body);
-  res.status(201).send({ status: 'success', data: newTour });
-});
+const createTour = Factory.createOne(Tour);
 
 const aliasTopTours = async (req, res, next) => {
   req.query.limit = '5';
@@ -16,60 +12,11 @@ const aliasTopTours = async (req, res, next) => {
   next();
 };
 
-const getAllTours = catchAsync(async (req, res, next) => {
-  const features = new APIFeature(Tour.find(), req.query)
-    .filter()
-    .sort()
-    .limitFields()
-    .paginate();
+const getAllTours = Factory.getAll(Tour);
+const getTourById = Factory.getOne(Tour, { path: 'reviews' });
+const updateTourById = Factory.updateOne(Tour);
 
-  const tours = await features.query;
-
-  res.send({
-    status: 'success',
-    results: tours.length,
-    page: req.query.page,
-    limit: req.query.limit,
-    data: tours,
-  });
-});
-
-const getTourById = catchAsync(async (req, res, next) => {
-  const { id } = req.params;
-  const tour = await Tour.findById(id).populate('reviews'); // populate the reviews field with the reviews data
-
-  if (!tour) {
-    // res.status(404).send({ status: 'fail', message: 'Invalid ID' });
-    return next(new AppError('Invalid ID', 404));
-  }
-  res.send({ status: 'success', data: tour });
-});
-
-const updateTourById = catchAsync(async (req, res, next) => {
-  const { id } = req.params;
-
-  const tour = await Tour.findByIdAndUpdate(id, req.body, {
-    new: true,
-    runValidators: true,
-  });
-
-  if (!tour) {
-    // res.status(404).send({ status: 'fail', message: 'Invalid ID' });
-    return next(new AppError('Invalid ID', 404));
-  }
-
-  res.status(200).send({ status: 'success', data: tour });
-});
-
-const deleteTourById = catchAsync(async (req, res, next) => {
-  const { id } = req.params;
-  const tour = await Tour.findByIdAndDelete(id);
-  if (!tour) {
-    // res.status(404).send({ status: 'fail', message: 'Invalid ID' });
-    return next(new AppError('Invalid ID', 404));
-  }
-  res.status(204).send({ status: 'success', data: {} });
-});
+const deleteTourById = Factory.deleteOne(Tour);
 
 const getTourStats = async (req, res, next) => {
   const stats = await Tour.aggregate([

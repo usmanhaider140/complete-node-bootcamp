@@ -1,6 +1,7 @@
 const User = require('../models/user.model');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
+const Factory = require('./handlingFactory');
 
 const getAllUsers = catchAsync(async (req, res) => {
   const users = await User.find();
@@ -19,6 +20,11 @@ const getAllUsers = catchAsync(async (req, res) => {
     });
   }
 });
+
+const getMe = (req, res, next) => {
+  req.params.id = req.user.id;
+  next();
+};
 
 const updateMe = catchAsync(async (req, res, next) => {
   // 1) Create error if user POSTS password data
@@ -55,30 +61,22 @@ const deleteMe = catchAsync(async (req, res, next) => {
   });
 });
 const createUser = (req, res) => {
-  res
-    .status(500)
-    .send({ status: 'fail', message: 'This route is not yet defined' });
-};
-const getUserById = (req, res) => {
-  res
-    .status(500)
-    .send({ status: 'fail', message: 'This route is not yet defined' });
+  res.status(500).send({
+    status: 'fail',
+    message: 'This route is not yet defined! Please use /signup instead',
+  });
 };
 
-const updateUserById = (req, res) => {
-  res
-    .status(500)
-    .send({ status: 'fail', message: 'This route is not yet defined' });
-};
-const deleteUserById = (req, res) => {
-  res
-    .status(500)
-    .send({ status: 'fail', message: 'This route is not yet defined' });
-};
+const getUserById = Factory.getOne(User);
+// Do NOT update passwords with this!
+const updateUserById = Factory.updateOne(User);
+
+const deleteUserById = Factory.deleteOne(User);
 
 module.exports = {
   getAllUsers,
   createUser,
+  getMe,
   updateMe,
   getUserById,
   updateUserById,

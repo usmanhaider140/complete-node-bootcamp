@@ -10,14 +10,28 @@ router.get(
 );
 
 router.get('/tour-stats', toursController.getTourStats);
-router.get('/monthly-plan/:year', toursController.getMonthlyPlan);
-router.get('/', protectRoute, toursController.getAllTours);
-router.post('/', toursController.createTour);
+router.get(
+  '/monthly-plan/:year',
+  protectRoute,
+  authController.restrictTo('admin', 'lead-guide', 'guide'),
+  toursController.getMonthlyPlan
+);
+router.get('/', toursController.getAllTours);
+router.post(
+  '/',
+  protectRoute,
+  authController.restrictTo('admin', 'lead-guide'),
+  toursController.createTour
+);
 
 router
   .route('/:id')
   .get(toursController.getTourById)
-  .patch(toursController.updateTourById)
+  .patch(
+    protectRoute,
+    authController.restrictTo('admin', 'lead-guide'),
+    toursController.updateTourById
+  )
   .delete(
     protectRoute,
     authController.restrictTo('admin', 'lead-guide'),
